@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of your site for SEO">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body id="HOME">
+    <header class="wrap-1">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-1">
+                    <button class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="navbar col-10">
+                    <ul class="nav-links">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT</a></li>
+                        <li><a href="#TAKEACTION">TAKE ACTION</a></li>
+                        <li><a class="active" href="#CORONA">CORONA</a></li>
+                        <li><a href="#NEWS">NEWS</a></li>
+                        <li><a href="#DOCTORES">DOCTORES</a></li>
+                        <li><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="col-1">
+                    <button class="user-contact">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search-form" id="searchForm">
+        <input type="text" placeholder="Search...">
+        <button type="button" onclick="toggleSearch()">Close</button>
+    </div>
+    <div class="popup-form" id="popupForm">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="togglePopup()">Close</button>
+            </form>
+        </div>
+    </div>
+    <div class="wrap-2">
+        <div class="container-lg">
+            <div class="slideshow active">
+                <div class="slide">
+                    <div class="content">
+                        <h2>Care early Coronavirus</h2>
+                        <div class="bot">
+                            <button class="btn-1 read-btn">Read More</button>
+                            <button class="btn-2">About us</button>
+                        </div>
+                    </div>
+                    <img src="image/bgd-hed.png" alt="image" width="100" height="100" loading="lazy">
+                </div>
+            </div>
+            <div class="slideshow">
+                <div class="slide">
+                    <div class="content">
+                        <h2>Care early Coronavirus</h2>
+                        <div class="bot">
+                            <button class="btn-1 read-btn"> Read More</button>
+                            <button class="btn-2">About us</button>
+                        </div>
+                    </div>
+                    <img src="image/bgd-hed.png" alt="image" width="1920" height="906" loading="lazy">
+                </div>
+            </div>
+            <div class="slideshow">
+                <div class="slide">
+                    <div class="content">
+                        <h2>Care early Coronavirus</h2>
+                        <div class="bot">
+                            <button class="btn-1 read-btn">Read More</button>
+                            <button class="btn-2">About us</button>
+                        </div>
+                    </div>
+                    <img src="image/bgd-hed.png" alt="image" width="1920" height="906" loading="lazy">
+                </div>
+            </div>
+            <div class="slideshow">
+                <div class="slide">
+                    <div class="content">
+                        <h2>Care early Coronavirus</h2>
+                        <div class="bot">
+                            <button class="btn-1 read-btn">Read More</button>
+                            <button class="btn-2">About us</button>
+                        </div>
+                    </div>
+                    <img src="image/bgd-hed.png" alt="image" width="1920" height="906" loading="lazy">
+                </div>
+            </div>
+            <div id="next" onclick="nextSlide()">&#8594;</div>
+            <div id="prev" onclick="prevSlide()">&#8592;</div>
+        </div>
+    </div>
+    <div class="wrap-3" id="ABOUT">
+        <div class="container">
+            <div class="row corona">
+                <div class="col-6 col-m-12 col-mp-6">
+                    <div class="top-p">
+                        <div class="text">
+                            <h3>About Corona Virus</h3>
+                            <hr>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. expedita optio quas neque.
+                                Deleniti, temporibus officiis?</p>
+                                <button class="btn read-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-m-12 col-mp-6 ">
+                    <div class="covid-img">
+                        <img class="img-fluid" src="image/covid.png" alt="covid" width="478" height="473"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-4" id="TAKEACTION">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-m-12 col-mp-6">
+                    <div class="covid-img">
+                        <img src="image/covid1.png" alt="covid" width="600" height="400" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-6 col-m-12 col-mp-6">
+                    <div class="text">
+                        <h3>CORONAVIRU <br>WHAT IT IS?</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. expedita optio quas neque.
+                            Deleniti, temporibus officiis?</p>
+                        <button class="btn read-btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="wrap-5" id="CORONA">
+        <div class="container">
+            <div class="protect">
+                <h3>HOW TO PROTECT YOURSELF</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae similique natus blanditiis</p>
+            </div>
+            <div class="row slider">
+                <div class="col-4 col-m-12 col-mp-6">
+                    <div class="slide one">
+                        <div class="card">
+                            <img src="image/sick.png" alt="sick" width="89" height="89" loading="lazy">
+                            <h4>Wear Mask</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, nihil? Magnam iste
+                                consequatur rem eaque</p>
+                        </div>
+                        <button class="read-btn read-btn">Read More</button>
+                    </div>
+                </div>
+                <div class="col-4 col-m-12 col-mp-6">
+                    <div class="slide two">
+                        <div class="card">
+                            <img src="image/wash.png" alt="wash" width="89" height="89" loading="lazy">
+                            <h4>Wash Hands</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, nihil? Magnam iste
+                                consequatur rem eaque</p>
+                        </div>
+                        <button class="read-btn">Read More</button>
+                    </div>
+                </div>
+                <div class="col-4 col-m-12 col-mp-6">
+                    <div class="slide three">
+                        <div class="card">
+                            <img src="image/home.png" alt="home" width="88" height="88" loading="lazy">
+                            <h4>Stay Home</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, nihil? Magnam iste
+                                consequatur rem eaque</p>
+                        </div>
+                        <button class="read-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="minusSlides()">&#10094;</a>
+            <a class="next" onclick="plusSlider()">&#10095;</a>
+        </div>
+    </section>
+    <section class="wrap-6" id="New">
+        <div class="container">
+            <div class="text-cases">
+                <h3>CORONAVIRUS CASES</h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi facere incidunt earum placeat dolorem
+                    molestias illum temporibus cum tenetur, reiciendis cumque fugit, ad in consectetur harum maiores
+                    corporis maxime laudantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum,
+                    dolores.</P>
+            </div>
+            <div class="row">
+                <div class="col-4 col-m-12 col-mp-12">
+                    <div class="img-text">
+                        <img src="image/Read-img.webp" alt="read" width="511" height="289" loading="lazy">
+                        <h4>Cases 01</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti id non veniam corporis
+                            veritatis quae, ratione repellendus fugiat? Magni reprehenderit corporis sed.</p>
+                        <img src="image/corona.webp" alt="corona" width="80" height="81" loading="lazy" class="round">
+                    </div>
+                </div>
+                <div class="col-4 col-m-12 col-mp-12">
+                    <div class="img-text">
+                        <img src="image/read1.webp" alt="read" width="511" height="289" loading="lazy">
+                        <h4>Cases 01</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti id non veniam corporis
+                            veritatis quae, ratione repellendus fugiat? Magni reprehenderit corporis sed.</p>
+                        <img src="image/corona.webp" alt="corona" width="80" height="81" loading="lazy" class="round">
+                    </div>
+                </div>
+                <div class="col-4 col-m-12 col-mp-12">
+                    <div class="img-text">
+                        <img src="image/Read-img.webp" alt="read" width="511" height="289" loading="lazy">
+                        <h4>Cases 01</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti id non veniam corporis
+                            veritatis quae, ratione repellendus fugiat? Magni reprehenderit corporis sed.</p>
+                        <img src="image/corona.webp" alt="corona" width="80" height="81" loading="lazy" class="round">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wrap-7" id="DOCTORES">
+        <div class="container">
+            <div class="heading">
+                <h3>WHAT DOCTORS SAY</h3>
+            </div>
+            <div class="row">
+                <div class="col-6 col-m-12 col-mp-6">
+                    <div class="text-image">
+                        <img src="image/layer.png" alt="layer" width="133" height="126" loading="lazy">
+                        <h4>DR.GOLAP DEN</h4>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis eius quibusdam,
+                            sed consequuntur sit quod nisi exercitationem error esse facere ducimus reprehenderit eaque
+                        </P>
+                        <span>,,</span>
+                    </div>
+                    <h4 class="text-center ">GET EVERY UPDATE</h4>
+                </div>
+                <div class="col-6 col-m-12 col-mp-6">
+                    <div class="text-image">
+                        <img src="image/layer1.png" alt="layer" width="111" height="111" loading="lazy">
+                        <h4>DR.GOLAP DEN</h4>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium facilis eius quibusdam,
+                            sed consequuntur sit quod nisi exercitationem error esse facere ducimus reprehenderit eaque
+                        </P>
+                        <span>,,</span>
+                    </div>
+                    <h4 class="text-center ">GET EVERY UPDATE</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-8">
+        <div class="container">
+            <div class="email-form">
+                <input type="email" name="email" placeholder="your email" required>
+                <br>
+                <button type="submit">SUBSCRIBE NOW</button>
+            </div>
+        </div>
+    </div>
+    <footer class="wrap-9" id="CONTACT">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-m-12 col-mp-6 col-t-12">
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Travel Advice</a></li>
+                            <li><a href="#">Protection</a></li>
+                            <li><a href="#">Care</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 col-m-12 col-mp-6 col-t-12">
+                    <div class="footer-section">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">many desktop publishing packages and web </a></li>
+                            <li><a href="#">age editors now use Lorem Ipsum as their </a></li>
+                            <li><a href="#">fault model text, and a search for 'lorem </a></li>
+                            <li><a href="#">um' will uncover many web sites still in their </a></li>
+                            <li><a href="#">fancy. Various</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 col-m-12 col-mp-6 col-t-12">
+                    <div class="footer-section">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="#">Making this the first true</a></li>
+                            <li><a href="#">Call: +011234567890</a></li>
+                            <li><a href="#">Email: demo@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 col-m-12 col-mp-6 col-t-12">
+                    <div class="footer-section countries">
+                        <h4>Countries</h4>
+                        <div class="country-images">
+                            <img src="image/countrys.png" alt="India">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
